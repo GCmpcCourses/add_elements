@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Adding Elements and Nodes</title>
+
+  </head>
+
+  <body>
+
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+ 
+
+    <script>
+
+        // Create new paragraph element containing text "Inserted paragraph"
+        let endText = document.createTextNode("This should be 2nd from end.")
+        let newParagraph = document.createElement("p")
+        newParagraph.appendChild(endText)
+
+        // Now add them to document
+        // Get the third p tag
+        let lastP = document.body.getElementsByTagName("p")[2]
+        document.body.insertBefore(newParagraph, lastP)
+
+    </script>
+  </body>
+</html>
