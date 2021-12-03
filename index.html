@@ -26,8 +26,21 @@
         let lastP = document.body.getElementsByTagName("p")[3]
         document.body.insertBefore(newParagraph, lastP)
 
+<<<<<<< HEAD
         let secondP = document.body.getElementsByTagName("p")[1]
         document.body.insertBefore(newParagraph, secondP)
+=======
+        //get the text node and move it
+
+        /* let moveThis = document.body.childNodes[2] 
+        let firstP = document.body.getElementsByTagName("p")[0]
+        document.body.insertBefore(moveThis, firstP)
+        */ 
+       
+        let firstP = document.body.getElementsByTagName("p")[0]
+        document.body.insertBefore(newParagraph, firstP)
+
+>>>>>>> a0addc4a7561b490c9a3eb14d8ca48aaf06958ab
 
     </script>
   </body>
