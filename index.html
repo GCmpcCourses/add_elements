@@ -26,6 +26,14 @@
         let lastP = document.body.getElementsByTagName("p")[3]
         document.body.insertBefore(newParagraph, lastP)
 
+        // Something Moved!
+        let endText2 = document.createTextNode("This is first!")
+        let newParagraph1 = document.createElement("p")
+        newParagraph1.appendChild(endText2)
+        let lastP2 = document.body.getElementsByTagName("p")[0]
+        document.body.insertBefore(newParagraph1, lastP2)
+
+
 <<<<<<< HEAD
         let secondP = document.body.getElementsByTagName("p")[1]
         document.body.insertBefore(newParagraph, secondP)
